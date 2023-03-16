@@ -7,26 +7,30 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
-import swaglabspages.ConfigReader;
 import swaglabspages.LoginPage;
-import swaglabspages.ProductPage;
+import swaglabspages.ProductListPage;
+import utils.ConfigReader;
 
 public class Loginsteps {
 
 	LoginPage pglogin;
-	ProductPage pgProduct;
+	ProductListPage pgProduct;
 	Properties prop;
 	
 	@DataProvider(name="UserData")
 	public Object[] UserValues()
 	{
-		prop=ConfigReader.readproperty();
+		prop=Hooks.prop;
+		//prop=ConfigReader.readproperty();
 		//ArrayList<String> aUserName=new ArrayList<String>();
 		String s=prop.getProperty("user");
 		String[] users;
 		
+		
+		
 			users=s.split(",");
-			
+		
+		
 		
 		return users;
 		
@@ -34,10 +38,10 @@ public class Loginsteps {
 	
 	
 	@Test(dataProvider= "UserData")
-	public void Login(String user)
+	public void ALogin(String user)
 	{
 		pglogin=new LoginPage(Hooks.driver);
-		pgProduct=new ProductPage(Hooks.driver);
+		pgProduct=new ProductListPage(Hooks.driver);
 		String password=prop.getProperty("password");
 		String[] errormessages=pglogin.Login_flow(user,password);
 		if(errormessages[0]!=null)

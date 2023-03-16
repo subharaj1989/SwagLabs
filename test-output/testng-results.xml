@@ -1,56 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-14T16:40:57 EDT" name="Suite" finished-at="2023-03-14T16:41:17 EDT" duration-ms="20266">
+  <suite started-at="2023-03-16T15:43:06 EDT" name="Suite" finished-at="2023-03-16T15:43:32 EDT" duration-ms="25404">
     <groups>
     </groups>
-    <test started-at="2023-03-14T16:40:57 EDT" name="Test" finished-at="2023-03-14T16:41:17 EDT" duration-ms="20266">
-      <class name="swaglabs.Hooks">
-        <test-method is-config="true" signature="Driversetup()[pri:0, instance:swaglabs.Hooks@659499f1]" started-at="2023-03-14T16:40:57 EDT" name="Driversetup" finished-at="2023-03-14T16:41:04 EDT" duration-ms="6810" status="PASS">
+    <test started-at="2023-03-16T15:43:06 EDT" name="Test" finished-at="2023-03-16T15:43:32 EDT" duration-ms="25404">
+      <class name="swaglabs.ProductpageTests">
+        <test-method signature="Login()[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:23 EDT" name="Login" finished-at="2023-03-16T15:43:24 EDT" duration-ms="1325" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Driversetup -->
-        <test-method is-config="true" signature="Driverclose()[pri:0, instance:swaglabs.Hooks@659499f1]" started-at="2023-03-14T16:41:16 EDT" name="Driverclose" finished-at="2023-03-14T16:41:17 EDT" duration-ms="1029" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="ProductSorted(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:24 EDT" name="ProductSorted" data-provider="SortBy" finished-at="2023-03-16T15:43:25 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="1144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name (A to Z)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductSorted -->
+        <test-method signature="ProductSorted(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:25 EDT" name="ProductSorted" data-provider="SortBy" finished-at="2023-03-16T15:43:26 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name (Z to A)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductSorted -->
+        <test-method signature="ProductSorted(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:26 EDT" name="ProductSorted" data-provider="SortBy" finished-at="2023-03-16T15:43:27 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="1002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price (low to high)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductSorted -->
+        <test-method signature="ProductSorted(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:27 EDT" name="ProductSorted" data-provider="SortBy" finished-at="2023-03-16T15:43:28 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price (high to low)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductSorted -->
+        <test-method signature="SelectedProduct_Compare(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:28 EDT" name="SelectedProduct_Compare" data-provider="ProductList" finished-at="2023-03-16T15:43:29 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Backpack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectedProduct_Compare -->
+        <test-method signature="SelectedProduct_Compare(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:29 EDT" name="SelectedProduct_Compare" data-provider="ProductList" finished-at="2023-03-16T15:43:29 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Bike Light]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectedProduct_Compare -->
+        <test-method signature="SelectedProduct_Compare(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:29 EDT" name="SelectedProduct_Compare" data-provider="ProductList" finished-at="2023-03-16T15:43:30 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="1007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Bolt T-Shirt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectedProduct_Compare -->
+        <test-method signature="SelectedProduct_Compare(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:31 EDT" name="SelectedProduct_Compare" data-provider="ProductList" finished-at="2023-03-16T15:43:31 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Fleece Jacket]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectedProduct_Compare -->
+      </class> <!-- swaglabs.ProductpageTests -->
+      <class name="swaglabs.Hooks">
+        <test-method is-config="true" signature="setup()[pri:0, instance:swaglabs.Hooks@47e2e487]" started-at="2023-03-16T15:43:07 EDT" name="setup" finished-at="2023-03-16T15:43:13 EDT" duration-ms="6551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="Driverclose()[pri:0, instance:swaglabs.Hooks@47e2e487]" started-at="2023-03-16T15:43:31 EDT" name="Driverclose" finished-at="2023-03-16T15:43:32 EDT" duration-ms="532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Driverclose -->
       </class> <!-- swaglabs.Hooks -->
       <class name="swaglabs.Loginsteps">
-        <test-method signature="Login(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@66d3eec0]" started-at="2023-03-14T16:41:04 EDT" name="Login" data-provider="UserData" finished-at="2023-03-14T16:41:06 EDT" duration-ms="2029" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="Login(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@66d3eec0]" started-at="2023-03-14T16:41:06 EDT" name="Login" data-provider="UserData" finished-at="2023-03-14T16:41:08 EDT" duration-ms="1960" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="Login(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@66d3eec0]" started-at="2023-03-14T16:41:08 EDT" name="Login" data-provider="UserData" finished-at="2023-03-14T16:41:15 EDT" duration-ms="6972" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="Login(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@66d3eec0]" started-at="2023-03-14T16:41:15 EDT" name="Login" data-provider="UserData" finished-at="2023-03-14T16:41:16 EDT" duration-ms="1295" status="PASS">
+        <test-method signature="ALogin(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@1af2d44a]" started-at="2023-03-16T15:43:13 EDT" name="ALogin" data-provider="UserData" finished-at="2023-03-16T15:43:14 EDT" duration-ms="775" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +121,40 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
+        </test-method> <!-- ALogin -->
+        <test-method signature="ALogin(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@1af2d44a]" started-at="2023-03-16T15:43:14 EDT" name="ALogin" data-provider="UserData" finished-at="2023-03-16T15:43:15 EDT" duration-ms="760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ALogin -->
+        <test-method signature="ALogin(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@1af2d44a]" started-at="2023-03-16T15:43:15 EDT" name="ALogin" data-provider="UserData" finished-at="2023-03-16T15:43:16 EDT" duration-ms="1232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ALogin -->
+        <test-method signature="ALogin(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@1af2d44a]" started-at="2023-03-16T15:43:16 EDT" name="ALogin" data-provider="UserData" finished-at="2023-03-16T15:43:23 EDT" duration-ms="6812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ALogin -->
       </class> <!-- swaglabs.Loginsteps -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

@@ -43,7 +43,7 @@ public class LoginPage {
     
     public boolean Valid_Users(String UserEntered,String PasswordEntered)
     {
-    	System.out.println( ValidUsers.getText()); 
+    	
     	String[] s=ValidUsers.getText().split("\\r?\\n|\\r");
     	users=Arrays.asList(s);
     	
@@ -62,9 +62,10 @@ public class LoginPage {
     	String errormessage_user=null;
     	String errormessage_password=null;
     	txtUsername.clear();
-    	txtPassword.clear();
+    	
     	txtUsername.sendKeys(user);
-    	txtPassword.sendKeys(password);
+    	txtPassword.clear();
+    	txtPassword.sendKeys(password);	
     	flag_validUser=Valid_Users(user,password);
     	btnLoginButton.click();
         
