@@ -1,161 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="6" total="11" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-16T15:43:06 EDT" name="Suite" finished-at="2023-03-16T15:43:32 EDT" duration-ms="25404">
+  <suite started-at="2023-03-21T21:53:54 EDT" name="Suite" finished-at="2023-03-21T21:54:14 EDT" duration-ms="19765">
     <groups>
+      <group name="AddProductsToCart">
+        <method signature="ProductpageTests.CartProductValidation(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@2d710f1a]" name="CartProductValidation" class="swaglabs.ProductpageTests"/>
+      </group> <!-- AddProductsToCart -->
+      <group name="Login">
+        <method signature="ProductpageTests.Login()[pri:0, instance:swaglabs.ProductpageTests@2d710f1a]" name="Login" class="swaglabs.ProductpageTests"/>
+      </group> <!-- Login -->
     </groups>
-    <test started-at="2023-03-16T15:43:06 EDT" name="Test" finished-at="2023-03-16T15:43:32 EDT" duration-ms="25404">
+    <test started-at="2023-03-21T21:53:54 EDT" name="Test" finished-at="2023-03-21T21:54:14 EDT" duration-ms="19765">
       <class name="swaglabs.ProductpageTests">
-        <test-method signature="Login()[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:23 EDT" name="Login" finished-at="2023-03-16T15:43:24 EDT" duration-ms="1325" status="PASS">
+        <test-method signature="Login()[pri:0, instance:swaglabs.ProductpageTests@2d710f1a]" started-at="2023-03-21T21:54:10 EDT" name="Login" finished-at="2023-03-21T21:54:11 EDT" duration-ms="1027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="ProductSorted(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:24 EDT" name="ProductSorted" data-provider="SortBy" finished-at="2023-03-16T15:43:25 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="1144" status="PASS">
+        <test-method signature="CartProductValidation(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@2d710f1a]" started-at="2023-03-21T21:54:11 EDT" name="CartProductValidation" data-provider="ProductList" finished-at="2023-03-21T21:54:11 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="516" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Name (A to Z)]]>
+                <![CDATA[Sauce Labs Backpac]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductSorted -->
-        <test-method signature="ProductSorted(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:25 EDT" name="ProductSorted" data-provider="SortBy" finished-at="2023-03-16T15:43:26 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="844" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Name (Z to A)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSorted -->
-        <test-method signature="ProductSorted(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:26 EDT" name="ProductSorted" data-provider="SortBy" finished-at="2023-03-16T15:43:27 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="1002" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Price (low to high)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSorted -->
-        <test-method signature="ProductSorted(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:27 EDT" name="ProductSorted" data-provider="SortBy" finished-at="2023-03-16T15:43:28 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="817" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Price (high to low)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductSorted -->
-        <test-method signature="SelectedProduct_Compare(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:28 EDT" name="SelectedProduct_Compare" data-provider="ProductList" finished-at="2023-03-16T15:43:29 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="784" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Backpack]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SelectedProduct_Compare -->
-        <test-method signature="SelectedProduct_Compare(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:29 EDT" name="SelectedProduct_Compare" data-provider="ProductList" finished-at="2023-03-16T15:43:29 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="778" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Bike Light]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SelectedProduct_Compare -->
-        <test-method signature="SelectedProduct_Compare(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:29 EDT" name="SelectedProduct_Compare" data-provider="ProductList" finished-at="2023-03-16T15:43:30 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="1007" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Bolt T-Shirt]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SelectedProduct_Compare -->
-        <test-method signature="SelectedProduct_Compare(java.lang.String)[pri:0, instance:swaglabs.ProductpageTests@54a7079e]" started-at="2023-03-16T15:43:31 EDT" name="SelectedProduct_Compare" data-provider="ProductList" finished-at="2023-03-16T15:43:31 EDT" depends-on-methods="swaglabs.ProductpageTests.Login" duration-ms="854" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sauce Labs Fleece Jacket]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SelectedProduct_Compare -->
+        </test-method> <!-- CartProductValidation -->
       </class> <!-- swaglabs.ProductpageTests -->
       <class name="swaglabs.Hooks">
-        <test-method is-config="true" signature="setup()[pri:0, instance:swaglabs.Hooks@47e2e487]" started-at="2023-03-16T15:43:07 EDT" name="setup" finished-at="2023-03-16T15:43:13 EDT" duration-ms="6551" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:swaglabs.Hooks@4659191b]" started-at="2023-03-21T21:53:54 EDT" name="setup" finished-at="2023-03-21T21:54:10 EDT" duration-ms="15472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Driverclose()[pri:0, instance:swaglabs.Hooks@47e2e487]" started-at="2023-03-16T15:43:31 EDT" name="Driverclose" finished-at="2023-03-16T15:43:32 EDT" duration-ms="532" status="PASS">
+        <test-method is-config="true" signature="Driverclose()[pri:0, instance:swaglabs.Hooks@4659191b]" started-at="2023-03-21T21:54:14 EDT" name="Driverclose" finished-at="2023-03-21T21:54:14 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Driverclose -->
       </class> <!-- swaglabs.Hooks -->
-      <class name="swaglabs.Loginsteps">
-        <test-method signature="ALogin(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@1af2d44a]" started-at="2023-03-16T15:43:13 EDT" name="ALogin" data-provider="UserData" finished-at="2023-03-16T15:43:14 EDT" duration-ms="775" status="PASS">
+      <class name="swaglabs.CartTests">
+        <test-method signature="BackToProductList()[pri:0, instance:swaglabs.CartTests@29215f06]" started-at="2023-03-21T21:54:11 EDT" name="BackToProductList" depends-on-groups="Login" finished-at="2023-03-21T21:54:12 EDT" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackToProductList -->
+        <test-method signature="clickCheckOut(java.lang.String)[pri:0, instance:swaglabs.CartTests@29215f06]" started-at="2023-03-21T21:54:12 EDT" name="clickCheckOut" data-provider="ProductList" depends-on-groups="AddProductsToCart" finished-at="2023-03-21T21:54:12 EDT" duration-ms="165" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[one]]>
+                <![CDATA[Sauce Labs Backpac]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<true> but was:<false>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<true> but was:<false>
+at org.junit.Assert.fail(Assert.java:88)
+at org.junit.Assert.failNotEquals(Assert.java:743)
+at org.junit.Assert.assertEquals(Assert.java:118)
+at org.junit.Assert.assertEquals(Assert.java:144)
+at swaglabs.CartTests.clickCheckOut(CartTests.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckOut -->
+      </class> <!-- swaglabs.CartTests -->
+      <class name="swaglabs.CheckoutTests">
+        <test-method signature="CheckOutValidation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:swaglabs.CheckoutTests@59505b48]" started-at="2023-03-21T21:54:12 EDT" name="CheckOutValidation" data-provider="CheckoutDetails" depends-on-groups="AddProductsToCart" finished-at="2023-03-21T21:54:14 EDT" duration-ms="1809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ram]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ram]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ALogin -->
-        <test-method signature="ALogin(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@1af2d44a]" started-at="2023-03-16T15:43:14 EDT" name="ALogin" data-provider="UserData" finished-at="2023-03-16T15:43:15 EDT" duration-ms="760" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ALogin -->
-        <test-method signature="ALogin(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@1af2d44a]" started-at="2023-03-16T15:43:15 EDT" name="ALogin" data-provider="UserData" finished-at="2023-03-16T15:43:16 EDT" duration-ms="1232" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ALogin -->
-        <test-method signature="ALogin(java.lang.String)[pri:0, instance:swaglabs.Loginsteps@1af2d44a]" started-at="2023-03-16T15:43:16 EDT" name="ALogin" data-provider="UserData" finished-at="2023-03-16T15:43:23 EDT" duration-ms="6812" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ALogin -->
-      </class> <!-- swaglabs.Loginsteps -->
+        </test-method> <!-- CheckOutValidation -->
+      </class> <!-- swaglabs.CheckoutTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

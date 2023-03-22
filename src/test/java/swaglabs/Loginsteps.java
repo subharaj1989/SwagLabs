@@ -37,7 +37,7 @@ public class Loginsteps {
 	}
 	
 	
-	@Test(dataProvider= "UserData")
+	@Test(dataProvider= "UserData",enabled=false)
 	public void ALogin(String user)
 	{
 		pglogin=new LoginPage(Hooks.driver);

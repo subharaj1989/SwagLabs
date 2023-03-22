@@ -6,10 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="swaglabs.CartTests">
+        <methods>
+          <include name="clickCheckOut" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- swaglabs.CartTests -->
       <class name="swaglabs.ProductpageTests">
         <methods>
-          <include name="ProductSorted" invocation-numbers="1 2 3"/>
-          <include name="SelectedProduct_Compare" invocation-numbers="0 1 2 3"/>
+          <include name="Login"/>
+          <include name="CartProductValidation"/>
         </methods>
       </class> <!-- swaglabs.ProductpageTests -->
     </classes>

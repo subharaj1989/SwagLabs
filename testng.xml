@@ -7,6 +7,8 @@
       <class name="swaglabs.Loginsteps"/>
       <class name="swaglabs.Hooks"/>
       <class name="swaglabs.ProductpageTests"/>
+      <class name="swaglabs.CartTests"/>
+      <class name="swaglabs.CheckoutTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

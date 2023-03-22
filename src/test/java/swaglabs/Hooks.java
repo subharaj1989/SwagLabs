@@ -31,7 +31,7 @@ public class Hooks {
 	  @AfterTest
 	  public void Driverclose()
 	  { 
-		  driver.close(); 
+		 // driver.close(); 
 	  }
 	 
 }
